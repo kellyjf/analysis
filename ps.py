@@ -43,7 +43,9 @@ if __name__ == "__main__":
 	baseset=list(range(1,1+args.count))
 	ps=list(powerset(baseset))
 	print([set(x) for x in ps])
-	ppfs=list(powerset(ps))
+	pp0=[sorted(x, key=lambda y: (len(y),y)) for x in list(powerset(ps))]
+	ppfs=sorted(pp0, key=lambda y: tuple([len(y)]+[len(z) for z in y]))
+ 
 	ppas=[x for x in ppfs if [] in x ]
 	pps=[x for x in ppas if baseset in x ]
 	print(len(pps))
