@@ -42,20 +42,23 @@ if __name__ == "__main__":
 
 	baseset=list(range(1,1+args.count))
 	ps=list(powerset(baseset))
-	print([set(x) for x in ps])
+	#print([set(x) for x in ps])
 	pp0=[sorted(x, key=lambda y: (len(y),y)) for x in list(powerset(ps))]
 	ppfs=sorted(pp0, key=lambda y: tuple([len(y)]+[len(z) for z in y]))
  
 	ppas=[x for x in ppfs if [] in x ]
 	pps=[x for x in ppas if baseset in x ]
-	print(len(pps))
+	#print(len(pps))
 
-	res=[]
+	res={'GOOD':[],'FAIL':[]}
 	for n,b in enumerate(pps):
+		bset=[set(x) for x in b]
 		if closure(b,n):
-			bset=[set(x) for x in b]
-			res.append(bset)
-			print(f"{n:3d} GOOD {len(bset):3d} {str(bset):<55}")
+			res['GOOD'].append(bset)
+		else:
+			res['FAIL'].append(bset)
 
-	print(len(res))
+	#print(len(res))
+	for bset in res['GOOD']:
+		print(f"{n:3d} GOOD {len(bset):3d} {str(bset):<55}")
 
