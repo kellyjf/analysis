@@ -59,6 +59,6 @@ if __name__ == "__main__":
 			res['FAIL'].append(bset)
 
 	#print(len(res))
-	for bset in res['GOOD']:
+	for n,bset in enumerate(res['GOOD']):
 		print(f"{n:3d} GOOD {len(bset):3d} {str(bset):<55}")
 

@@ -1,12 +1,17 @@
 ﻿Title,Type,ID,Chapter
 Fundamental Theorem of Calculus,Theorem,7.5.1,Riemann Integral
+Integrable Limit Theorem,Theorem,7.4.4,Riemann Integral
+Integral Limit Reversal is Additive Inverse,Definition,7.4.3,Riemann Integral
 Algebraic Properties of Integrals,Theorem,7.4.2,Riemann Integral
 Integrals add,Theorem,7.4.1,Riemann Integral
 Integrating Discontinuous Functions,Theorem,7.3.2,Riemann Integral
 Continuous Functions are Integrable,Theorem,7.2.9,Riemann Integral
-Integrability Criterion,Theorem,7.2.8,Riemann Integral
+"Integrability equals Converging U, L",Theorem,7.2.8,Riemann Integral
 Riemann Integrability,Definition,7.2.7,Riemann Integral
+Bounded function Integrals,Lemma,7.2.6,Riemann Integral
 Upper and Lower Integrals,Definition,7.2.5,Riemann Integral
+Ordering of all Partitions,Lemma,7.2.4,Riemann Integral
+Refinements narrow the gap,Lemma,7.2.3,Riemann Integral
 Refinement,Definition,7.2.2,Riemann Integral
 Partition,Definition,7.2.1,Riemann Integral
 L’hôpital’s Infinite Case,Theorem,5.3.8,Derivatives
@@ -15,6 +20,7 @@ L’hôpitals 0/0,Theorem,5.3.6,Derivatives
 Generalized MVT,Theorem,5.3.5,Derivatives
 Mean Value Theorem,Theorem,5.3.2,Derivatives
 Rolle’s Theorem,Theorem,5.3.1,Derivatives
+Darboux’s Theorem,Theorem,5.2.7,Derivatives
 Interior Extremum Theorem,Theorem,5.2.6,Derivatives
 Chain Rule,Theorem,5.2.5,Derivatives
 Algebraic Differentiability Theorem,Theorem,5.2.4,Derivatives
@@ -30,8 +36,10 @@ Extreme Value Theorem,Theorem,4.4.2,Continuity
 Preservation of Compact Sets,Theorem,4.4.1,Continuity
 Composition of Continuous Functions,Theorem,4.3.9,Continuity
 Algebraic Continuity Theorem,Theorem,4.3.4,Continuity
+Criterion for Discontinuity,Theorem,4.3.3,Continuity
 Continuity Equivalences,Theorem,4.3.2,Continuity
 Continuity,Definition,4.3.1,Continuity
+Divergence Condition for Functional Limits,Theorem,4.2.5,Continuity
 Algebraic Limit Theorem for Functional Limits,Theorem,4.2.4,Continuity
 Sequential Criteria for Functional Limits,Theorem,4.2.3,Continuity
 Functional Limit,Definition,4.2.1,Continuity
@@ -41,10 +49,17 @@ Nested Compact Set Property,Theorem,3.3.5,Topology of R
 Compact is Closed and Bounded,Theorem,3.3.4,Topology of R
 Bounded Set,Definition,3.3.3,Topology of R
 Compact Set,Definition,3.3.1,Topology of R
+"Finite Union Closed, Infinite Intersection Closed",Theorem,3.2.14,Topology of R
+Open and Close interchange on Conjugacy,Theorem,3.2.13,Topology of R
+Closure is the smallest closed superset,Theorem,3.2.12,Topology of R
 Closure,Definition,3.2.11,Topology of R
-Density of Q in R,Theorem,3.2.10,Real Numbers
+Density of Q in R,Theorem,3.2.10,Topology of R
+Closed equals All Cauchy Sequences Contained,Theorem,3.2.08,Topology of R
 Closed Set,Definition,3.2.07,Topology of R
+Isolated Point,Definition,3.2.06,Topology of R
+Limt points equals non-trivial convergent sequence existence,Theorem,3.2.05,Topology of R
 Limit Point,Definition,3.2.04,Topology of R
+"Infinite Union Open, Finite Intersection Open",Theorem,3.2.03,Topology of R
 Open Set,Definition,3.2.01,Topology of R
 Absolute Rearragements,Theorem,2.7.10,Series
 Rearrangements,Definition,2.7.09,Series
@@ -71,3 +86,12 @@ Every  convergent sequence is bounded,Theorem,2.3.2,Sequences
 Bounded Sequence,Definition,2.3.1,Sequences
 Convergence,Definition,2.2.3,Sequences
 Nested Interval Theorem,Theorem,1.4.1,Real Numbers
+Upper Bound is Supremum,Lemma,1.3.8,Real Numbers
+Maximum of a set,Definition,1.3.4,Real Numbers
+Supremum and Infimum,Definition,1.3.2,Real Numbers
+Upper and Lower Bounds,Definition,1.3.1,Real Numbers
+Axiom of Completeness,Axiom,1.3,Real Numbers
+DeMorgan’s Laws,Theorem,1.2.5x,Topology of R
+Triangle Inequality,Definition,1.2.5,Real Numbers
+Dirichlet Function,Definition,1.2.4,Topology of R
+Function,Definition,1.2.3,Topology of R

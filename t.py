@@ -24,6 +24,8 @@ def choose(pattern, indent=""):
 
 	if len(thms)==0:	
 		thms=session.query(Theorem).filter(Theorem.title.like(f"{pattern}")).all()
+	if len(thms)==0:	
+		thms=session.query(Theorem).filter(Theorem.title.like(f"%{pattern}%")).all()
 
 	for ndx,thm in enumerate(thms):
 		print(f"{indent}{ndx:3d} {thm.id:>9} {thm.title}")
@@ -39,10 +41,10 @@ def choose(pattern, indent=""):
 def editthm(thm):
 	choice=""
 	while choice != 'Q':
-		print(f"{thm.chapter:<12} {thm.type:<12} {thm.id:>10}  {thm.title}")
+		print(f"{thm.chapter:<18} {thm.type:<12} {thm.id:>10}  {thm.title}")
 		for ndx,u in enumerate(thm.arguments):
 			athm=u.support
-			print(f"{ndx:3d} {athm.chapter:<12} {athm.type:<12} {athm.id:>10}  {athm.title}")
+			print(f"{ndx:3d} {athm.chapter:<18} {athm.type:<12} {athm.id:>10}  {athm.title:<30.30} {u.text}")
 
 		action=input("[A]dd, [D]elete, [E]dit, [S]ave or [Cancel]? ")
 		choice=action[0].upper()
@@ -71,7 +73,6 @@ def editthm(thm):
 
 def edit(pattern):
 	thm=choose(pattern)
-	print("JFK",thm)
 	editthm(thm)
 
 
